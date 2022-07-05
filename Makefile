@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -fopenmp
 LFLAGS = -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c++17 -O3 -mavx2 
 WFLAGS = -luser32 -lgdi32 -lopengl32 -lgdiplus -lShlwapi -ldwmapi -lstdc++fs -static -std=c++17 -O3 -mavx2 
-FILE = Application
+FILE = app
 
 all: $(FILE).cpp
 	$(CXX) $(CXXFLAGS) $(FILE).cpp $(LFLAGS) -o app && make run
